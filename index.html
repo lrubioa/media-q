@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive css</title>
+
+    <style>
+        #container{
+            display: flex;
+
+            background-color: slategray;
+            text-align: center;
+            justify-content: space-around;
+
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        
+        .items{
+            text-align: center;
+            color: whitesmoke;
+            background-color: slategray;
+            padding-top: 20px;
+        }
+
+        @media screen and (max-width: 750px) {
+            #container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="container">
+            <div class="items">HOME</div>
+            <div class="items">SERVICES</div>
+            <div class="items">ABOUT US</div>
+        </div>
+    </nav>
+</body>
+
+</html>
